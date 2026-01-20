@@ -1,71 +1,70 @@
-# Portafolio de Ciencia de Datos
+# Análisis Exploratorio de Viajes en Bicicleta (EDA)
 
-## Sobre mí
-Soy egresado de Actuaría y Ciencia de Datos, con formación sólida en estadística, análisis de datos y modelación.  
-Mi interés principal está en el uso de datos para entender fenómenos reales, detectar patrones relevantes y apoyar la toma de decisiones mediante análisis reproducibles y bien documentados.
-
-Este portafolio reúne proyectos académicos y prácticos enfocados en análisis exploratorio, modelación y aprendizaje automático, desarrollados principalmente en Python.
+## Descripción
+Este proyecto presenta un análisis exploratorio de datos de viajes en bicicleta con el objetivo de identificar patrones de uso, comportamiento temporal y variables relevantes para la preparación de modelos predictivos. El enfoque está en comprender la estructura del dataset, evaluar la calidad de los datos y generar insights accionables a partir de visualizaciones y estadísticas descriptivas.
 
 ---
 
-## Proyectos destacados
-
-### 1. Análisis de siniestros de vivienda por sector
-**Repositorio:**  
-https://github.com/JuanChavoya/ds-siniestros-vivienda
-
-**Descripción:**  
-Análisis y modelación de datos históricos de siniestros de vivienda con enfoque actuarial. Se estiman métricas de frecuencia, severidad y una prima indicativa por sector, utilizando información de siniestros y viviendas estimadas como exposición al riesgo.
-
-**Habilidades demostradas:**
-- Limpieza y preparación de datos
-- Agregación y análisis por grupos
-- Métricas de riesgo y análisis interpretativo
-- Documentación clara y estructuración de proyectos
+## Objetivo
+- Analizar el comportamiento de los viajes en bicicleta a lo largo del tiempo.
+- Identificar patrones por hora, día y tipo de usuario.
+- Evaluar el balance de la variable objetivo y posibles implicaciones para modelado.
+- Preparar el dataset para etapas posteriores de aprendizaje automático.
 
 ---
 
-### 2. Análisis exploratorio de viajes en bicicleta
-**Repositorio:**  
-https://github.com/JuanChavoya/ds-eda-bicicletas
+## Dataset
+El análisis utiliza el archivo:
 
-**Descripción:**  
-Análisis exploratorio de un conjunto de datos de viajes en bicicleta, orientado a entender patrones de uso, comportamiento temporal y variables relevantes para la preparación de modelos predictivos.
+- `train_full_clean.csv`
 
-**Habilidades demostradas:**
-- Análisis exploratorio de datos (EDA)
-- Visualización y análisis descriptivo
-- Identificación de desbalance de clases
-- Preparación de datos para modelado
+Debido a su tamaño (~200 MB), el dataset **no se incluye en el repositorio**.
 
----
+### Cómo reproducir el análisis
+- Coloca `train_full_clean.csv` en la carpeta `data/`, **o**
+- Ajusta la ruta en el notebook para cargar el archivo desde Google Drive.
 
-### 3. Clustering y análisis exploratorio (Harry Potter)
-**Repositorio:**  
-[Aquí irá el link cuando lo subas]
-
-**Descripción:**  
-Proyecto de análisis exploratorio y clustering aplicado a un dataset temático, con el objetivo de identificar grupos naturales dentro de los datos y analizar sus características principales.
-
-**Habilidades demostradas:**
-- Reducción de dimensionalidad
-- Algoritmos de clustering
-- Interpretación de resultados no supervisados
-- Comunicación de hallazgos
+El notebook está preparado para manejar ambas opciones.
 
 ---
 
-## Tecnologías y herramientas
+## Metodología
+1. Carga y validación del dataset.
+2. Análisis exploratorio de variables numéricas y categóricas.
+3. Visualización de patrones temporales (hora, día, fin de semana).
+4. Análisis del balance de clases de la variable objetivo.
+5. Identificación de variables relevantes para modelado posterior.
+
+---
+
+## Resultados principales
+- Se identifican patrones claros de uso por hora y día de la semana.
+- Existe desbalance en la variable objetivo, lo cual sugiere la necesidad de técnicas de estratificación o ponderación en modelos posteriores.
+- Algunas variables muestran alta correlación con el comportamiento de los viajes y son candidatas clave para modelado predictivo.
+
+---
+
+## Estructura del repositorio
+ds-eda-bicicletas/
+├── README.md
+├── notebooks/
+│ └── EDA_viajes_en_bicicleta_portfolio.ipynb
+└── data/
+└── README.md
+
+
+---
+
+## Tecnologías utilizadas
 - Python
-- pandas, numpy
-- matplotlib, seaborn
-- scikit-learn
+- pandas
+- numpy
+- matplotlib
+- seaborn
 - Jupyter Notebook
-- GitHub para control de versiones y documentación
 
 ---
 
-## Notas finales
-Los proyectos incluidos en este portafolio están pensados como ejemplos reproducibles y bien documentados del proceso de análisis de datos, desde la exploración inicial hasta la interpretación de resultados.
+## Notas
+Este proyecto tiene fines demostrativos y forma parte de un portafolio académico-profesional. El análisis se centra en la exploración y comprensión de los datos, no en la construcción final de modelos.
 
-Este portafolio se encuentra en constante actualización conforme se desarrollan nuevos proyectos y se profundiza en técnicas de ciencia de datos y modelación.
